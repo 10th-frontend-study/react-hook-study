@@ -16,9 +16,9 @@ function handleClick() {
   console.log(name); // 뭐가 나올까요
 }
 ```
+<br/>
 
-
-### 답
+### 답.
 
 콘솔에는 여전히 Taylor가 찍힌다.
 그 이유는 변경된 state의 return값이 다음 렌더가 시작될 때 return되기 때문이다.
@@ -26,6 +26,7 @@ function handleClick() {
 ### [실습 예제코드](https://react.dev/reference/react/useState#examples-basic)
 
 
+<br/><br/>
 
 # Quiz2. 정답
 
@@ -42,11 +43,17 @@ function handleClick() {
 // handleClick 함수가 호출되었을 때 age값은 몇일까요
 ```
 
-정답.
+<br/>
 
-버튼을 클릭했을때 age는 45가 아닌 43이 된다. 코드가 돌아가는 중에는 setter가 업데이트되지 않기 때문임. 그래서 각각의 setAge(age+1) 은 결국 setAge(43)이 된다.
+### 답.
 
-해결방법.
+버튼을 클릭했을때 age는 45가 아닌 43이 된다. 코드가 돌아가는 중에는 setter가 업데이트되지 않기 때문임.
+
+그래서 각각의 setAge(age+1) 은 결국 setAge(43)이 된다.
+
+<br/>
+
+### 해결방법.
 
 ```jsx
 function handleClick() {

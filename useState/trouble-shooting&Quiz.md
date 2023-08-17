@@ -18,6 +18,8 @@ function handleClick() {
 }
 ```
 
+<br/>
+
 
 콘솔에 여전히 Taylor가 찍히는 이유.
 
@@ -25,7 +27,7 @@ function handleClick() {
 
 ### [실습 예제코드](https://react.dev/reference/react/useState#examples-basic)
 
-
+<br/><br/>
 
 # Quiz2.
 ### 직전 값을 기반으로 새 값 리턴하기
@@ -69,12 +71,29 @@ function TodoList() {
 
 ### 1. state를 update했는데 old value를 반환하는 경우
 
-https://react.dev/reference/react/useState#troubleshooting
+```jsx
+function handleClick() {
+  console.log(count);  // 0
 
-state는 일반적인 자바스크립트의 변수처럼 보이지만 사실은 좀 더 snapshot처럼 동작한다.
+  setCount(count + 1); // Request a re-render with 1
+  console.log(count);  // Still 0!
+
+  setTimeout(() => {
+    console.log(count); // Also 0!
+  }, 5000);
+}
+```
+
+
+* 콘솔에 0이 계속 나오는 이유: 
+  * state는 일반적인 자바스크립트의 변수처럼 보이지만 사실은 좀 더 snapshot처럼 동작하기 때문이다.
+
 
 [state는 snapshot처럼 동작한다는 말의 의미](./state-snapshot.md)
 
+[원문](https://react.dev/reference/react/useState#troubleshooting)
+
+<br/><br/>
 ### 2. state를 update했는데 화면이 update되지 않는 경우
 
 리액트에서는 **`Object.is()`** 다음 state가 이전 state와 동일하다면 사용자의 update 요청을 무시한다.

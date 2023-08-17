@@ -50,6 +50,8 @@ function MyComponent() {
 
 useState 네임 컨벤션 `[something, setSomething]`
 
+<br/>
+
 ### useState 사용 시 주의할 점
 
 <aside>
@@ -105,6 +107,9 @@ export default function Gallery() {
 }
 ```
 
+<br/>
+
+
 ### useState를 사용한 코드
 
 ```jsx
@@ -143,12 +148,14 @@ export default function Gallery() {
 }
 ```
 
-
+<br/><br/>
 
 ## useState의 특징
 * state는 isolated하고 private함
 
 * 같은 컴포넌트를 두 번 렌더할 경우 각 복사본 컴포넌트의 두 state는 완전히 다른 것이기 때문에 서로에게 영향을 주지 않음
+
+<br/>
 
 ### 한 컴포넌트에서 두 개의 state 사용하기
 
