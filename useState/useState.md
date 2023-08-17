@@ -1,6 +1,6 @@
 # useState는 어쩌다 생기게 되었을까
 
-### 베경
+### 배경
 
 `Class Component` vs `Functional Component`
 
