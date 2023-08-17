@@ -18,6 +18,9 @@
 - 상태가 변하지 않는 pure한 컴포넌트로 모든 것을 만드는 것은 쉽지 않은 일임
 - 상태 관리를 위해 useState가 생김
 
+
+<br/><br/>
+
 # useState 사용법
 
 ```jsx
@@ -50,18 +53,21 @@ useState 네임 컨벤션 `[something, setSomething]`
 ### useState 사용 시 주의할 점
 
 <aside>
-💡 주의
+💡 주의 
+
 1. 모든 `hooks`는 컴포넌트 최상단에 위치해야 한다.
 2. 조건문, 반복문, 중첩 함수 내부에서는 hooks를 호출할 수 없다.
 3. React Function에서만 hooks 호출 가능
 
 </aside>
 
-## 실습 예제 코드
+<br/>
 
 ### 일반 변수를 사용한 경우
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8c8b330f-75a4-48c8-a7ec-59f8f4767d9d/Untitled.png)
+[코드 작동 보러가기](https://react.dev/learn/state-a-components-memory#when-a-regular-variable-isnt-enough)
+
+![useState1](../images/useState1.png)
 
 ```jsx
 // App.js
@@ -137,13 +143,23 @@ export default function Gallery() {
 }
 ```
 
+
+
+## useState의 특징
+* state는 isolated하고 private함
+
+* 같은 컴포넌트를 두 번 렌더할 경우 각 복사본 컴포넌트의 두 state는 완전히 다른 것이기 때문에 서로에게 영향을 주지 않음
+
 ### 한 컴포넌트에서 두 개의 state 사용하기
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/ed755607-f88a-4923-841b-e63383e72c35/Untitled.png)
+따라서 위에서 각각의 state는 왼쪽 컴포넌트, 오른쪽 컴포넌트가 개별적으로 작동함
+![useState2](../images/useState2.png)
 
 `Show details` 클릭 시
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dac98196-39fa-4fd8-a46a-305ba50b4f1b/Untitled.png)
+[코드 작동 보러가기](https://react.dev/learn/state-a-components-memory#state-is-isolated-and-private)
+
+
 
 ```jsx
 import { useState } from 'react';
@@ -189,19 +205,13 @@ export default function Gallery() {
 
 위처럼 서로 관계가 없는 두 state일 경우에는 두 state로 개별적으로 사용하면 되지만 두 state가 동시에 사용될 경우에는 하나의 오브젝트로 담아서 사용하는 것이 편리하다.
 
-[****Choosing the State Structure****](./StateStructure.md)
+### [useState structure로 사용하기](./StateStructure.md)
+
+<br/><br/>
 
 # 리액트 훅은 마법이 아닌 배열이다.
 
-https://medium.com/@ryardley/react-hooks-not-magic-just-arrays-cd4f1857236e
+[React Hook 동작 원리에 대한 글](https://medium.com/@ryardley/react-hooks-not-magic-just-arrays-cd4f1857236e)
 
 - hooks의 동작 원리를 알 수 있음
 - 왜 루프, 조건문, 중첩함수 내에서 사용하면 안되는지 알 수 있음
-
-### State는 고립되어있고 private함
-
-같은 컴포넌트를 두 번 렌더할 경우 각 복사본 컴포넌트의 두 state는 완전히 다른 것이기 때문에 서로에게 영향을 주지 않음
-
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8afc79ad-8799-4838-b8a3-7251b8bb4394/Untitled.png)
-
-따라서 위에서 각각의 state는 왼쪽 컴포넌트, 오른쪽 컴포넌트가 개별적으로 작동함
