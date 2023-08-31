@@ -38,24 +38,33 @@
 
 ## 🗓 스터디 일정
 
-
 ### 1주차 스터디 `2023/08/17`
 
 | 이름   | 주제           |
 | ------ | -------------- |
-| 이수화 | [useEffect]()  |
-| 이승현 | [useContext]() |
+| 이수화 | [useEffect](https://github.com/10th-frontend-study/react-hooks-study/blob/main/useEffect/useEffect.md)  |
+| 이승현 | [useContext](https://github.com/10th-frontend-study/react-hooks-study/blob/main/useContext/useContext.md) |
 | 이원주 | [useState](https://github.com/10th-frontend-study/react-hooks-study/blob/main/useState/useState.md)   |
 
 <br/>
 
-### 2주차 스터디 `2023/08/24`
+### 2주차 스터디 `2023/08/31`
 
 | 이름   | 주제           |
 | ------ | -------------- |
-| 이수화 | [useReducer]()  |
-| 이승현 | [useMemo]() |
-| 이원주 | [useCallback]()   |
+| 이수화 | [useReducer](https://github.com/10th-frontend-study/react-hooks-study/blob/main/useReducer/useReducer.md)  |
+| 이승현 | [useMemo](https://github.com/10th-frontend-study/react-hooks-study/blob/main/useMemo/useMemo.md) |
+| 이원주 | [useCallback](https://github.com/10th-frontend-study/react-hooks-study/blob/main/useCallback/useCallback.md)   |
+
+<br/>
+
+### 3주차 스터디 `2023/09/07`
+
+| 이름   | 주제           |
+| ------ | -------------- |
+| 이수화 | [customHook]()  |
+| 이승현 | [customHook]() |
+| 이원주 | [useRef]()     |
 
 <br/>
 
@@ -64,15 +73,15 @@
 <details>
 <summary> <b> 공부할 hooks </b>  </summary>
 <ul>
-<li><a href="">useState</a></li>
-<li><a href="">useEffect</a></li>
-<li><a href="">useContext</a></li>
-<li><a href="">useReducer</a></li>
-<li><a href="">useMemo</a></li>
-<li><a href="">useCallback</a></li>
+<li><a href="https://github.com/10th-frontend-study/react-hooks-study/blob/main/useState/useState.md">useState</a></li>
+<li><a href="https://github.com/10th-frontend-study/react-hooks-study/blob/main/useEffect/useEffect.md">useEffect</a></li>
+<li><a href="https://github.com/10th-frontend-study/react-hooks-study/blob/main/useContext/useContext.md">useContext</a></li>
+<li><a href="https://github.com/10th-frontend-study/react-hooks-study/blob/main/useReducer/useReducer.md">useReducer</a></li>
+<li><a href="https://github.com/10th-frontend-study/react-hooks-study/blob/main/useMemo/useMemo.md">useMemo</a></li>
+<li><a href="https://github.com/10th-frontend-study/react-hooks-study/blob/main/useCallback/useCallback.md">useCallback</a></li>
 <li><a href="">useRef</a></li>
 <li><a href="">CustomHooks1</a></li>
-<li><a href="">CustomHooks1</a></li>
+<li><a href="">CustomHooks2</a></li>
 </ul>
 
 </details>
