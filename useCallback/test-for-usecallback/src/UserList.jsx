@@ -1,7 +1,7 @@
-// import React from "react";
+import React from "react";
 
-// const User = React.memo(function User({ user, onRemove, onToggle }) {
-const User = function User({ user, onRemove, onToggle }) {
+const User = React.memo(function User({ user, onRemove, onToggle }) {
+// const User = function User({ user, onRemove, onToggle }) {
   return (
     <div>
       <b
@@ -18,11 +18,11 @@ const User = function User({ user, onRemove, onToggle }) {
       <button onClick={() => onRemove(user.id)}>삭제</button>
     </div>
   );
-};
-// });
+// };
+});
 
-// const UserList = React.memo(function UserList({ users, onRemove, onToggle }) {
-const UserList = ({ users, onRemove, onToggle }) => {
+const UserList = React.memo(function UserList({ users, onRemove, onToggle }) {
+// const UserList = ({ users, onRemove, onToggle }) => {
   console.log("UserList rendered...");
   return (
     <div>
@@ -36,7 +36,7 @@ const UserList = ({ users, onRemove, onToggle }) => {
       ))}
     </div>
   );
-};
-// });
+// };
+});
 
 export default UserList;

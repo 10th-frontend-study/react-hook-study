@@ -43,61 +43,61 @@ function App() {
 
   const nextId = useRef(4);
 
-  const onCreate = () => {
-    const user = {
-      id: nextId.current,
-      username,
-      email,
-    };
-    setUsers(users.concat(user));
-
-    setInputs({
-      username: "",
-      email: "",
-    });
-    nextId.current += 1;
-  };
-
-  const onRemove = (id) => {
-    setUsers(users.filter((user) => user.id !== id));
-  };
-
-  const onToggle = (id) => {
-    setUsers(
-      users.map((user) =>
-        user.id === id ? { ...user, active: !user.active } : user
-      )
-    );
-  };
-
-  // =================== useCallback 사용 ================
-
-  // const onCreate = useCallback(() => {
+  // const onCreate = () => {
   //   const user = {
   //     id: nextId.current,
   //     username,
   //     email,
   //   };
-  //   setUsers((users) => users.concat(user));
+  //   setUsers(users.concat(user));
 
   //   setInputs({
   //     username: "",
   //     email: "",
   //   });
   //   nextId.current += 1;
-  // }, [username, email]);
+  // };
 
-  // const onRemove = useCallback((id) => {
-  //   setUsers((users) => users.filter((user) => user.id !== id));
-  // }, []);
+  // const onRemove = (id) => {
+  //   setUsers(users.filter((user) => user.id !== id));
+  // };
 
-  // const onToggle = useCallback((id) => {
-  //   setUsers((users) =>
+  // const onToggle = (id) => {
+  //   setUsers(
   //     users.map((user) =>
   //       user.id === id ? { ...user, active: !user.active } : user
   //     )
   //   );
-  // }, []);
+  // };
+
+  // =================== useCallback 사용 ================
+
+  const onCreate = useCallback(() => {
+    const user = {
+      id: nextId.current,
+      username,
+      email,
+    };
+    setUsers((users) => users.concat(user));
+
+    setInputs({
+      username: "",
+      email: "",
+    });
+    nextId.current += 1;
+  }, [username, email]);
+
+  const onRemove = useCallback((id) => {
+    setUsers((users) => users.filter((user) => user.id !== id));
+  }, []);
+
+  const onToggle = useCallback((id) => {
+    setUsers((users) =>
+      users.map((user) =>
+        user.id === id ? { ...user, active: !user.active } : user
+      )
+    );
+  }, []);
 
   const count = useMemo(() => countActiveUsers(users), [users]);
 

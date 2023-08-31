@@ -1,12 +1,12 @@
-// import React from "react";
+import React from "react";
 
-// const CreateUser = React.memo(function CreateUser({
-//   username,
-//   email,
-//   onChange,
-//   onCreate,
-// }) {
-  const CreateUser = ({ username, email, onChange, onCreate }) => {
+const CreateUser = React.memo(function CreateUser({
+  username,
+  email,
+  onChange,
+  onCreate,
+}) {
+  // const CreateUser = ({ username, email, onChange, onCreate }) => {
   console.log("Createuser rendered...");
   return (
     <div>
@@ -25,7 +25,7 @@
       <button onClick={onCreate}>등록</button>
     </div>
   );
-  };
-// });
+  // };
+});
 
 export default CreateUser;
