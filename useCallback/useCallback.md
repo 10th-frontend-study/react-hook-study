@@ -1,8 +1,6 @@
 # ._.) useCallback()을 알아보자
 
-<br/>
-
-## 목차
+### 목차
 * [useCallback이란]()
   * [기본 사용법]()
   * [사용 예시]()
@@ -82,7 +80,9 @@ const onToggle = id => {
 ```
 
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/edcb3eea-faf5-458b-97e3-9ebb2d6f1f8c/Untitled.png)
+<img src="../images/test-useCallback.png" width="70%">
+
+<br/>
 
 위의 `onCreate`, `onRemove`, `onToggle` 함수는 컴포넌트가 리렌더링 될 때마다 새로 만들어진다. 
 
@@ -191,7 +191,9 @@ export default App;
 
 <br/>
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/edcb3eea-faf5-458b-97e3-9ebb2d6f1f8c/Untitled.png)
+<img src="../images/test-useCallback.png" width="70%">
+
+<br/>
 
 - 사실, `useCallback` 은 `useMemo` 를 기반으로 만들어짐
 - 함수를 위해서 사용 할 때 더욱 편하게 해준 것일 뿐
