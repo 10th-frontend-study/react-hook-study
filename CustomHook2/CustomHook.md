@@ -27,43 +27,43 @@
 
 ```jsx
 function useInput(initalState){
-	const [data, setValue] = useState(initalState);
-	const handleChange = useCallback( (e) => {
-    const { name, value } = e.target; // input태그의 name값과 value값 불러옴
+    const [data, setValue] = useState(initalState);
+    const handleChange = useCallback( (e) => {
+    	const { name, value } = e.target; // input태그의 name값과 value값 불러옴
 	  setValue({ ...data, [name]: value }); //input이 여러개일때 ...data로 상태관리
-},[data]);
+    },[data]);
 
-	return [data, handleChange];
+    return [data, handleChange];
 };
 ```
 
 ```jsx
-	function MyComponent() {
-  const [data, handleChange] = useInput({
-    id : "",
-    email : "",
-    password : "",
-    phone : "",
-  });
+function MyComponent() {
+    const [data, handleChange] = useInput({
+        id : "",
+        email : "",
+        password : "",
+        phone : "",
+      });
   
-	useEffect( () =>{
-    console.log(data);
-  }, [data]);
+    useEffect( () =>{
+        console.log(data);
+    }, [data]);
 
-	return (
-		<>	
-			<h1>
-	      useInput
-	    </h1>
-	    <div>
-      <div className="input-div">
-          <input type="text" name="id" value={data.id} onChange={handleChange}></input>
-          <input type="text" name="email" value={data.email} onChange={handleChange}></input>
-          <input type="text" name="password" value={data.password} onChange={handleChange}></input>
-        </div>
-      </div>
-		</>
-	)
+    return (
+        <>	
+            <h1>
+	        useInput
+            </h1>
+            <div>
+                <div className="input-div">
+                  <input type="text" name="id" value={data.id} onChange={handleChange}></input>
+                  <input type="text" name="email" value={data.email} onChange={handleChange}></input>
+                  <input type="text" name="password" value={data.password} onChange={handleChange}></input>
+                </div>
+            </div>
+        </>
+    )
 };
 ```
 
