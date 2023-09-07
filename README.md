@@ -1,4 +1,4 @@
-# React Hooks 부수기 🐋
+# React Hooks 부수기 🐋 [完]
 
 <p align="center">
 <img src="./images/react-hooks-study.png" width="80%" alt="react-hook-study" />
@@ -62,9 +62,9 @@
 
 | 이름   | 주제           |
 | ------ | -------------- |
-| 이수화 | [customHook]()  |
-| 이승현 | [customHook]() |
-| 이원주 | [useRef]()     |
+| 이수화 | [customHook - useFetch](https://github.com/10th-frontend-study/react-hooks-study/blob/main/useFetch/useFetch.md)  |
+| 이승현 | [customHook - useInput, useToggle, usePrevious](https://github.com/10th-frontend-study/react-hooks-study/blob/main/CustomHook2/CustomHook.md) |
+| 이원주 | [useRef](https://github.com/10th-frontend-study/react-hooks-study/blob/main/useRef/useRef.md)     |
 
 <br/>
 
@@ -79,9 +79,9 @@
 <li><a href="https://github.com/10th-frontend-study/react-hooks-study/blob/main/useReducer/useReducer.md">useReducer</a></li>
 <li><a href="https://github.com/10th-frontend-study/react-hooks-study/blob/main/useMemo/useMemo.md">useMemo</a></li>
 <li><a href="https://github.com/10th-frontend-study/react-hooks-study/blob/main/useCallback/useCallback.md">useCallback</a></li>
-<li><a href="">useRef</a></li>
-<li><a href="">CustomHooks1</a></li>
-<li><a href="https://github.com/10th-frontend-study/react-hooks-study/blob/main/CustomHook2/CustomHook.md">CustomHooks2</a></li>
+<li><a href="https://github.com/10th-frontend-study/react-hooks-study/blob/main/useRef/useRef.md">useRef</a></li>
+<li><a href="https://github.com/10th-frontend-study/react-hooks-study/blob/main/useFetch/useFetch.md">CustomHooks - useFetch</a></li>
+<li><a href="https://github.com/10th-frontend-study/react-hooks-study/blob/main/CustomHook2/CustomHook.md">CustomHooks - useInput, useToggle, usePrevious</a></li>
 </ul>
 
 </details>
