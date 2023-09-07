@@ -81,7 +81,7 @@
 <li><a href="https://github.com/10th-frontend-study/react-hooks-study/blob/main/useCallback/useCallback.md">useCallback</a></li>
 <li><a href="">useRef</a></li>
 <li><a href="">CustomHooks1</a></li>
-<li><a href="">CustomHooks2</a></li>
+<li><a href="https://github.com/10th-frontend-study/react-hooks-study/blob/main/CustomHook2/CustomHook.md">CustomHooks2</a></li>
 </ul>
 
 </details>
